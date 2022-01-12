@@ -1,16 +1,28 @@
-<link rel="stylesheet" href="../css/estilos.css">
-<!-- enlace relativo -->
-<link rel="short cut icon" href="../Imagen/rosaVioleta.jpg">
-<!-- enlace absoluto font awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-<title>Ferimoda</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de la librería de animación: animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- link de mi css -->
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- enlace relativo -->
+    <link rel="short cut icon" href="../Imagen/rosaVioleta.jpg">
+    <!-- enlace absoluto font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Ferimoda</title>
 </head>
 
 <body>
     <div class="grilla">
         <header class="header">
-            <img src="../Imagen/logo.jpeg" alt="logo ferimoda">
+            <img src="../Imagen/logo.jpeg" alt="logo ferimoda" class="wow animate__animated animate__flipInY" >
             <nav class="nav">
                 <ul class="nav__links">
                     <li class="nav__link"><a href="../index.html" target="_blank">Inicio</a></li>
@@ -24,7 +36,7 @@
         </header>
         <div class="main">
             <div>
-                <h1> Vanesa Duran</h1>
+                <h1 class="wow animate__animated animate__fadeInLeftBig"> Vanesa Duran</h1>
             </div>
             <div>
                 <img class="main_div--img" src="../Imagen/imgPaginaVanesaDuran/arosArgolla.jpeg" alt="Aros argolla">
@@ -52,6 +64,10 @@
 
             </div>
         </div>
+        <script src="js/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 </body>
 
 </html>
