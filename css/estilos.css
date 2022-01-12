@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    /* Propiedad gradiente */
+    background-image: linear-gradient(rgb(128, 0, 128), white );
+}
+
+.main {
+    grid-area: main;
+    background-color: #e7c6ee;
+}
+
+.footer {
+    grid-area: footer;
+    /* Propiedad gradiente */
+    background-image: linear-gradient( rgb(97, 96, 96) , rgb(226, 148, 226));
+}
+
+header {
+    background-image: url("../Imagen/Imagen\ de\ fondo.JPG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #EDD2F3;
+    height: 300px;
+    margin: 0px;
+}
+
+body div header img {
+    width: 15%;
+    padding: 5px;
+    display: inline-block;
+    margin: 0px 500px 30px 0px
+}
+
+.nav {
+    display: inline-block;
+    margin: 0px 0px 200px 100px
+}
+
+.nav__links {
+    list-style: none;
+    text-align: justify;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    display: flex
+}
+
+.nav__link {
+    padding: 20px;
+}
+
+.nav__link--activo {
+    font-weight: bold;
+    padding: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(253, 14, 146);
+    text-align: center;
+    font-family: 'Comforter', cursive;
+    text-transform: uppercase;
+   /* transformación */
+    transform: skew(-20deg);
+}
+
+.main_div--img {
+    width: 400px;
+    height: 450px;
+}
+
+.main_div--imgjuana {
+    width: 400px;
+    height: 600px;
+}
+
+.main_div--imgNatura {
+    width: 32%;
+}
+
+.footer__div--seguinos {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    padding: 75px;
+    margin: 15px;
+}
+
+.footer__div--contactanos {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    padding: 75px;
+    margin: 15px 0px 15px 700px;
+}
+
